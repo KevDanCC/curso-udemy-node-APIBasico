@@ -32,11 +32,11 @@ const ProductoSchema= Schema({
     disponible:{
         type: Boolean,
         default: true
+    },
+    img:{
+        type: String
     }
-
-
 })
-
 
 ProductoSchema.methods.toJSON = function(){
     const {__v, _id:uid, ...data}=this.toObject();
